@@ -8,5 +8,12 @@
 	$(target).toggleClass('collapse');
 });
 
+//btn.onmouseover = function(){btnch.style.backgroundColor='#49cbcd'};
+//btn.onmouseout = function(){btnch.style.backgroundColor=''};
+
+//$('.btn').onmouseover(function(){event})
+
+
+
 
 })

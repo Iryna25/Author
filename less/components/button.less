@@ -1,6 +1,6 @@
 @button-color:        #fff;
 @button-background:   #788492;
-@button-border:       1px solid #ccc;
+@button-border:       none;
 @button-border-radius:2px;
 @button-padding:      5px 10px;
 @button-font-size:    14px;
@@ -25,6 +25,7 @@
 	background: @button-background;
 	.hook-button();
 	&:hover {
+		background-color: @global-primary-background;
 		text-decoration: none;
 		.hook-button-hover();
 	}
@@ -45,3 +46,9 @@
 .hook-button-active() {};
 .hook-button-misc() {};
 
+.btn-inverse{
+	background-color: @global-primary-background;
+	&:hover {
+		background-color: @button-background;
+	}
+}
