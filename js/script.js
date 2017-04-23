@@ -13,7 +13,15 @@
 
 //$('.btn').onmouseover(function(){event})
 
-
+if($(window).width() > '820') {
+  $('.bxslider').bxSlider(
+      {
+       pager:false
+      }
+    )
+}
 
 
 })
+
+

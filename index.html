@@ -7,6 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/social.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
@@ -51,15 +52,31 @@
 	</header>	
 	
 	<div class="section main-section">
-		<div class="section-overlay background-primary" style="background-image: url(img/bg-header.png);">
-		</div>
-		<div class="container">
-			<div class="section-content inverse">
-				<h1 class="h1">This is a main heading</h1>
-				<div class="description">Lorem Ipsum is simply dummy text of the printing</div>
-				<button class="button">learn more</button>
-			</div>
-		</div>
+		
+		<ul class="bxslider">
+			<li>
+				<div class="section-overlay background-primary" style="background-image: url(img/bg-header.png);">
+				</div>
+				<div class="container">
+					<div class="section-content inverse">
+						<h1 class="h1">This is a main heading</h1>
+						<div class="description">Lorem Ipsum is simply dummy text of the printing</div>
+						<button class="button">learn more</button>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="section-overlay background-dark" style="background-image: url(img/bg-header.png);">
+				</div>
+				<div class="container">
+					<div class="section-content inverse">
+						<h1 class="h1">Lorem ipsum dolor sit amet.</h1>
+						<div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et!</div>
+						<button class="button">learn more</button>
+					</div>
+				</div>
+			</li>
+		</ul>
 	</div>
 
 	<div id="team" class="section team">
@@ -70,6 +87,9 @@
 					<div class="card-img">
 						<img src="img/team-photo.png" alt="">
 					</div>
+					<div class="card-hover">
+						<img src="img/hover-mark.png" alt="">
+					</div>
 					<div class="card-heading">Adrian Thomas</div>
 					<div class="card-description">CEO & Founder</div>
 					<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
@@ -77,6 +97,9 @@
 				<div class="card">
 					<div class="card-img">
 						<img src="img/team-photo.png" alt="">
+					</div>
+					<div class="card-hover">
+						<img src="img/hover-mark.png" alt="">
 					</div>
 					<div class="card-heading">Narate Ketram</div>
 					<div class="card-description">Creative Director</div>
@@ -86,6 +109,9 @@
 					<div class="card-img">
 						<img src="img/team-photo.png" alt="">
 					</div>
+					<div class="card-hover">
+						<img src="img/hover-mark.png" alt="">
+					</div>
 					<div class="card-heading">Fernando Comet</div>
 					<div class="card-description">CEO & Founder</div>
 					<p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been </p>
@@ -93,6 +119,9 @@
 				<div class="card">
 					<div class="card-img">
 						<img src="img/team-photo.png" alt="">
+					</div>
+					<div class="card-hover">
+						<img src="img/hover-mark.png" alt="">
 					</div>
 					<div class="card-heading">Adedayo saheed</div>
 					<div class="card-description">Creative Director</div>
@@ -193,14 +222,16 @@
 					<span class="info">info@mail.com</span>
 				</div>
 				<div class="column-right ">
-					<div class="form-group">
-						<input type="text" class="form-control f-sm" placeholder="Name">
-						<input type="text" class="form-control f-sm" placeholder="Email">
-						<textarea class="form-control" placeholder="Message"></textarea>
-					</div>
-					<div class="clearfix">
-						<button class="button btn-inverse">send</button>
-					</div>
+					<form>
+						<div class="form-group">
+							<input type="text" class="form-control f-sm" placeholder="Name" required="" />
+							<input type="email" class="form-control f-sm" placeholder="Email" required=""/>
+							<textarea class="form-control" placeholder="Message" required=""></textarea>
+						</div>
+						<div class="clearfix">
+							<input type="submit" value="send" class="button btn-inverse"/>
+						</div>
+					</form>
 				</div>
 				
 			</div>
@@ -209,6 +240,7 @@
 	
 	<script src="js/jquery-3.1.1.js"></script>
 	<script src="js/jquery-migrate-1.4.1.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

@@ -484,7 +484,7 @@ a:hover {
   display: block;
   width: 100%;
   height: 43px;
-  padding: 15px 20px;
+  padding: 10px 20px;
   background-color: #fff;
   border: 1px solid #ccc;
   color: #000;
@@ -764,12 +764,9 @@ textarea.form-control {
   background-color: #f8f9fb;
 }
 .main-section {
-  margin-top: 115px;
+  margin-top: 100px;
   position: relative;
-  min-height: 566px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 0;
 }
 .main-section .h1 {
   font-weight: 600;
@@ -812,9 +809,19 @@ textarea.form-control {
     width: 100%;
   }
 }
+.team .card-hover {
+  position: absolute;
+  bottom: 65%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  display: none;
+}
 .team .card-img {
   margin-top: 30px;
   margin-bottom: 60px;
+  position: relative;
 }
 @media all and (max-width: 950px) {
   .team .card-img {
@@ -822,11 +829,17 @@ textarea.form-control {
     margin-bottom: 30px;
   }
 }
+.team .card-img:hover ~ .card-hover {
+  display: block;
+}
 .team .card-heading {
   font-size: 22px;
 }
 .team .card-description {
   margin: 15px auto;
+}
+.team .card-text {
+  width: 100%;
 }
 .plans .card {
   width: 31%;
@@ -834,9 +847,6 @@ textarea.form-control {
   border: none;
   border-radius: 2px;
   padding: 0;
-  /*.button:hover ~ .card-header{
-				background-color: @global-primary-background;
-			}*/
 }
 @media all and (max-width: 850px) {
   .plans .card {
@@ -962,4 +972,35 @@ textarea.form-control {
   .footer .column-right .button {
     float: none;
   }
+}
+.bx-wrapper .bx-viewport {
+  border: none;
+}
+.bxslider > li {
+  min-height: 566px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media all and (max-width: 840px) {
+  .bxslider > li {
+    display: none;
+  }
+  .bxslider > li:first-child {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.bx-wrapper .bx-prev {
+  left: 25px;
+  background: url(../img/prev.png);
+}
+.bx-wrapper .bx-next {
+  right: 25px;
+  background: url(../img/next.png);
+}
+.bx-wrapper .bx-controls-direction a {
+  width: 51px;
+  height: 51px;
 }
