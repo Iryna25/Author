@@ -418,9 +418,8 @@ img {
   position: relative;
 }
 .container {
-  max-width: 1200px;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
   padding: 0 15px;
 }
 html {
@@ -734,12 +733,27 @@ textarea.form-control {
     margin-bottom: 40px;
   }
 }
+@media all and (min-width: 1200px) {
+  .container,
+  .navbar > .container {
+    width: 1200px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .container,
+  .navbar > .container {
+    max-width: 1200px;
+  }
+}
 .header {
   width: 100%;
   position: fixed;
   z-index: 1000;
   top: 0;
   background-color: #fff;
+}
+.navbar-header {
+  height: 100%;
 }
 .collapse {
   display: -webkit-flex;
@@ -776,6 +790,11 @@ textarea.form-control {
 @media all and (max-width: 500px) {
   .main-section .h1 {
     font-size: 40px;
+  }
+}
+@media all and (max-width: 720px) {
+  .main-section .h1 {
+    max-width: 80%;
   }
 }
 .main-section .description {
@@ -976,11 +995,19 @@ textarea.form-control {
 .bx-wrapper .bx-viewport {
   border: none;
 }
+.bxslider {
+  padding: 0;
+}
 .bxslider > li {
   min-height: 566px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+@media all and (max-width: 400px) {
+  .bxslider > li {
+    min-height: 500px;
+  }
 }
 @media all and (max-width: 840px) {
   .bxslider > li {

@@ -8,10 +8,6 @@
 	$(target).toggleClass('collapse');
 });
 
-//btn.onmouseover = function(){btnch.style.backgroundColor='#49cbcd'};
-//btn.onmouseout = function(){btnch.style.backgroundColor=''};
-
-//$('.btn').onmouseover(function(){event})
 
 if($(window).width() > '820') {
   $('.bxslider').bxSlider(
@@ -21,7 +17,20 @@ if($(window).width() > '820') {
     )
 }
 
+ $('.btn').mouseover(function(){
+	$(this).parent().siblings('.card-header').css('background','#49cbcd')
+	
+})
+
+ $('.btn').mouseout(function(){
+	$(this).parent().siblings('.card-header').css('background','#485460')
+})
 
 })
 
 
+
+
+
+  
+  
