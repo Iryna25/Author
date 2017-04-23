@@ -77,7 +77,10 @@
 		}
 	};
 	.navbar-header{
-		height: 100%;
+		@media all and (min-width: @navbar-breakpoint){
+			height: 100%;
+		}
+		
 	}
 	.hook-navbar-brand() {};
 	.hook-navbar-nav() {};

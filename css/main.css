@@ -752,8 +752,10 @@ textarea.form-control {
   top: 0;
   background-color: #fff;
 }
-.navbar-header {
-  height: 100%;
+@media all and (min-width: 750px) {
+  .navbar-header {
+    height: 100%;
+  }
 }
 .collapse {
   display: -webkit-flex;
